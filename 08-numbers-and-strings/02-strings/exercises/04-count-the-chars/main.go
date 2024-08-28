@@ -33,6 +33,6 @@ func main() {
 	//
 	// When you run it with "İNANÇ", it should return 5 not 7.
 
-	length := len(os.Args[1])
+	length := len(string(os.Args[1]))
 	fmt.Println(length)
 }
