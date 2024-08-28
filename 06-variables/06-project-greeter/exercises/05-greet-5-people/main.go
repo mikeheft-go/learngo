@@ -8,6 +8,11 @@
 
 package main
 
+import (
+	"fmt"
+	"os"
+)
+
 // ---------------------------------------------------------
 // EXERCISE: Greet 5 People
 //
@@ -33,4 +38,10 @@ package main
 
 func main() {
 	// TYPE YOUR CODE HERE
+	for i, a := range os.Args {
+		if i == 0 {
+			continue
+		}
+		fmt.Println(a)
+	}
 }
