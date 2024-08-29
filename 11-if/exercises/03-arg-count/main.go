@@ -8,6 +8,12 @@
 
 package main
 
+import (
+	"fmt"
+	"os"
+	"strings"
+)
+
 // ---------------------------------------------------------
 // EXERCISE: Arg Count
 //
@@ -30,4 +36,7 @@ package main
 // ---------------------------------------------------------
 
 func main() {
+	argsLength := len(os.Args[1:])
+
+	fmt.Printf(`There are %d: "%s"`, argsLength, strings.Join(os.Args[1:], " "))
 }
